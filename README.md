@@ -1,8 +1,8 @@
-# Ingress-110M
+# Ingress
 
 > *In observational astrophysics, **ingress** marks the critical first moment an exoplanet touches the limb of its host star, casting its shadow and revealing its presence.*
 
-**Ingress-110M** is a 110-million parameter Conformer foundation model for self-supervised representation learning, physical dynamics reasoning, and automated Habitable Zone exoplanet discovery across deep-space photometric time series (NASA TESS & Kepler).
+**Ingress** is a 110-million parameter Conformer foundation model for self-supervised representation learning, physical dynamics reasoning, and automated Habitable Zone exoplanet discovery across deep-space photometric time series (NASA TESS & Kepler).
 
 Combines Multi-Head Self-Attention (for long-term orbital harmonics and stellar rotation) with Depthwise Separable Convolutions (for steep ingress/egress transit slopes and asymmetric cometary tails).
 
@@ -80,8 +80,8 @@ Screening the full TESS TOI catalog with the pipeline yielded 12 rocky candidate
 ### 1. Requirements
 
 ```bash
-git clone https://github.com/karodg/Ingress-110M.git
-cd Ingress-110M
+git clone https://github.com/karodg/Ingress.git
+cd Ingress
 pip install -r requirements.txt
 ```
 
@@ -111,7 +111,7 @@ Loads the 110M model, screens candidate light curves, runs Kopparapu Habitable Z
 ## Repository Structure
 
 ```
-Ingress-110M/
+Ingress/
 ├── models/
 │   └── conformer.py           # 110M Conformer architecture & Pre-LayerNorm modules
 ├── data/
